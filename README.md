@@ -12,7 +12,7 @@
 
 这里选择更优的方式，在dubbo的服务层之上提供一个API网关，由API网关负责对dubbo服务的访问（可以考虑用泛化的方式去调用），这样所有的业务系统只要以Restful的方式调用API网关即可调用dubbo服务。
 
-在dubbo-api中定义服务提供方为服务消费方暴露接口
+在dubbo-api中定义服务提供方为服务消费方暴露接口：
 
 ```java
 public interface TestService {
@@ -22,7 +22,7 @@ public interface TestService {
 
 **服务提供方**
 
-添加依赖
+添加依赖：
 
 ```xml
 <dependencies>
@@ -40,7 +40,7 @@ public interface TestService {
 </dependencies>
 ```
 
-在application.properties添加dubbo的相关配置信息
+在application.properties添加dubbo的相关配置信息：
 
 ```properties
 # 当前dubbo应用id
@@ -58,7 +58,7 @@ dubbo.protocol.port=20880
 
 注：这个配置只针对服务提供方，消费方不用指定协议，它自己会根据服务端的地址信息和@Reference注解去解析协议。
 
-在Spring Boot Application的上添加`@EnableDubbo`，表示要开启dubbo功能. (dubbo provider服务可以使用或者不使用web容器)
+在Spring Boot Application的上添加`@EnableDubbo`，表示要开启dubbo功能。(dubbo provider服务可以使用或者不使用web容器)
 
 ```java
 @EnableDubbo
@@ -88,7 +88,7 @@ public class TestServiceImpl implements TestService {
 
 **服务消费方**
 
-添加依赖
+添加依赖：
 
 ```xml
 <dependencies>
@@ -106,7 +106,7 @@ public class TestServiceImpl implements TestService {
 </dependencies>
 ```
 
-在application.properties添加dubbo的相关配置信息
+在application.properties添加dubbo的相关配置信息：
 
 ```properties
 # 当前dubbo应用id
