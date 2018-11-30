@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="https://i.ibb.co/250CB9Y/154358749351878.png" width="80%"/>
+  <img src="https://i.ibb.co/250CB9Y/154358749351878.png" width="60%"/>
 	<br/>
 	
-  [![Build Status](https://travis-ci.org/coderqianlq/spring-cloud-cli.svg?branch=master)](https://travis-ci.org/coderqianlq/spring-cloud-cli)
+  [![Build Status](https://travis-ci.org/coderqianlq/spring-boot-dubbo-cli.svg?branch=master)](https://travis-ci.org/coderqianlq/spring-boot-dubbo-cli)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/coderqianlq/spring-boot-dubbo-cli/blob/master/LICENSE)
 </div>
 
