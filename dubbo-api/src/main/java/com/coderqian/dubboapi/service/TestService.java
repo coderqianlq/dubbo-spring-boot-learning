@@ -15,4 +15,12 @@ public interface TestService {
      * @return String
      */
     String test(String text);
+
+    /**
+     * 测试接口
+     *
+     * @param text 测试数据
+     * @return String
+     */
+    String testMybatis(String text);
 }

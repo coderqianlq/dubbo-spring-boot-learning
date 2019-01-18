@@ -23,4 +23,9 @@ public class TestServiceImpl implements TestService {
     public String test(@ApiParam(value = "测试数据", required = true) String text) {
         return text;
     }
+
+    @Override
+    public String testMybatis(String text) {
+        return null;
+    }
 }
