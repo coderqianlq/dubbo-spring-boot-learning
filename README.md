@@ -3,7 +3,7 @@
 	<br/>
 	
   [![Build Status](https://travis-ci.org/coderqianlq/dubbo-spring-boot-cli.svg?branch=master)](https://travis-ci.org/coderqianlq/dubbo-spring-boot-cli)
-  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/coderqianlq/spring-boot-dubbo-cli/blob/master/LICENSE)
+  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/coderqianlq/dubbo-spring-boot-cli/blob/master/LICENSE)
 </div>
 
 **快速开始**

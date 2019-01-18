@@ -15,6 +15,6 @@ http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <dubbo:protocol name="dubbo" port="20880"/>
 
     <dubbo:service interface="com.coderqian.dubboapi.service.TestService" ref="testService" retries="3" timeout="6000"/>
-    <bean id="testService" class="com.coderqian.dubboprovider.service.impl.TestServiceImpl"/>
+    <bean id="testService" class="com.coderqian.dubboservice.service.impl.TestServiceImpl"/>
 
 </beans>
