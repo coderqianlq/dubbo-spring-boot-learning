@@ -1,4 +1,4 @@
-package com.coderqian.dubboprovider.configuration.config;
+package com.coderqian.dubbocore.configuration.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Value;

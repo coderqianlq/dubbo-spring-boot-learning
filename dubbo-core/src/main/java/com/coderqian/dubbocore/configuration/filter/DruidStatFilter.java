@@ -1,4 +1,4 @@
-package com.coderqian.dubboprovider.configuration.filter;
+package com.coderqian.dubbocore.configuration.filter;
 
 import com.alibaba.druid.support.http.WebStatFilter;
 
@@ -6,9 +6,11 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebInitParam;
 
 /**
- * Created by superlee on 2017/11/6.
- * 配置druid监控统计功能
- * Druid过滤器
+ * @author qianliqing
+ * @date 2019-01-18 6:37 PM
+ * mail: qianlq0824@gmail.com
+ * <p>
+ * 配置druid监控统计功能和过滤器
  */
 @WebFilter(filterName = "druidWebStatFilter", urlPatterns = "/*",
         initParams = {

@@ -1,6 +1,6 @@
-package com.coderqian.dubboprovider.mapper;
+package com.coderqian.dubbocore.mapper;
 
-import com.coderqian.dubboprovider.model.entity.UserEntity;
+import com.coderqian.dubbocore.model.entity.UserEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

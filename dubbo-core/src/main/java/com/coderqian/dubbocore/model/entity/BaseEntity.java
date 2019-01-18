@@ -1,4 +1,4 @@
-package com.coderqian.dubboprovider.model.entity;
+package com.coderqian.dubbocore.model.entity;
 
 import lombok.Data;
 
