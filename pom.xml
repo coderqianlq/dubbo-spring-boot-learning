@@ -12,7 +12,6 @@
     <modules>
         <module>dubbo-api</module>
         <module>dubbo-core</module>
-        <module>dubbo-service</module>
         <module>dubbo-provider</module>
         <module>dubbo-consumer</module>
     </modules>

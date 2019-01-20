@@ -1,8 +1,7 @@
-package com.coderqian.dubboservice.service.impl;
+package com.coderqian.dubboprovider.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.coderqian.dubboapi.service.TestService;
-import com.coderqian.dubbocore.mapper.UserMapper;
 import com.coderqian.dubbocore.model.entity.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -14,11 +13,11 @@ import java.util.List;
  * mail: qianlq0824@gmail.com
  */
 
-@Service
+@Service(version = "1.0.0", timeout = 5000, interfaceClass = TestService.class)
 public class TestServiceImpl implements TestService {
 
     @Autowired
-    private UserMapper userMapper;
+    private TestService testService;
 
 
     //    @HystrixCommand(commandProperties = {
@@ -32,6 +31,6 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public List<UserEntity> testMybatis(String text) {
-        return userMapper.findAll();
+        return testService.testMybatis("测试");
     }
 }

@@ -20,7 +20,7 @@ import java.util.List;
 @RequestMapping("/test")
 public class TestController {
 
-    @Reference
+    @Reference(version = "1.0.0", timeout = 5000, interfaceClass = TestService.class, check = false)
     private TestService testService;
 
     @HystrixCommand(fallbackMethod = "testError")
