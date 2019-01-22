@@ -1,4 +1,4 @@
-package com.coderqian.dubbocore.configuration.servlet;
+package com.coderqian.dubboprovider.configuration.servlet;
 
 import com.alibaba.druid.support.http.StatViewServlet;
 

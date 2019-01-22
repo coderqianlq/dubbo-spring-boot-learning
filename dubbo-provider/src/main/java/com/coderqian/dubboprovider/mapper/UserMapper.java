@@ -1,4 +1,4 @@
-package com.coderqian.dubbocore.mapper;
+package com.coderqian.dubboprovider.mapper;
 
 import com.coderqian.dubbocore.model.entity.UserEntity;
 import org.apache.ibatis.annotations.Mapper;

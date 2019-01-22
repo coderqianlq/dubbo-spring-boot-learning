@@ -1,4 +1,4 @@
-package com.coderqian.dubbocore.configuration.filter;
+package com.coderqian.dubboprovider.configuration.filter;
 
 import com.alibaba.druid.support.http.WebStatFilter;
 
