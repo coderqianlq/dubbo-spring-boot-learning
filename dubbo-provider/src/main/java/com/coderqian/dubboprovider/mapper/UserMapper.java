@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * @author qianliqing
  * @date 2019/1/18 7:58 PM
- * email: qianliqing@hyperchain.com
+ * email: qianlq0824@gmail.com
  */
 
 @Mapper
