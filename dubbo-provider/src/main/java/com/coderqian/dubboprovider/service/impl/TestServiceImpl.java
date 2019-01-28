@@ -2,8 +2,10 @@ package com.coderqian.dubboprovider.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.coderqian.dubboapi.service.TestService;
-import com.coderqian.dubboprovider.mapper.UserMapper;
+import com.coderqian.dubbocore.model.dto.UserDto;
 import com.coderqian.dubbocore.model.entity.UserEntity;
+import com.coderqian.dubboprovider.converter.User2UserDtoMapper;
+import com.coderqian.dubboprovider.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -33,8 +35,10 @@ public class TestServiceImpl implements TestService {
     }
 
     @Override
-    public List<UserEntity> testMybatis(String text) {
+    public List<UserDto> testMybatis(String text) {
         log.info("测试数据：{}", text);
-        return userMapper.findAll();
+        List<UserEntity> users = userMapper.findAll();
+        List<UserDto> userDto = User2UserDtoMapper.INSTANCE.users2UserDtos(users);
+        return userDto;
     }
 }

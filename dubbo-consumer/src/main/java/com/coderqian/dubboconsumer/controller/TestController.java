@@ -2,7 +2,8 @@ package com.coderqian.dubboconsumer.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.coderqian.dubboapi.service.TestService;
-import com.coderqian.dubbocore.model.entity.UserEntity;
+import com.coderqian.dubboconsumer.converter.User2UserVoMapper;
+import com.coderqian.dubboconsumer.model.vo.UserVo;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -34,7 +35,8 @@ public class TestController {
     }
 
     @RequestMapping(value = "/mybatis", method = RequestMethod.GET)
-    public List<UserEntity> testMybatis(String text) {
-        return testService.testMybatis(text);
+    public List<UserVo> testMybatis(String text) {
+        List<UserVo> users = User2UserVoMapper.INSTANCE.users2UserVos(testService.testMybatis(text));
+        return users;
     }
 }
