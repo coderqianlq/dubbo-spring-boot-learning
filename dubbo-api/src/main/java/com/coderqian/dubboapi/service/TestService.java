@@ -1,5 +1,6 @@
 package com.coderqian.dubboapi.service;
 
+import com.coderqian.dubbocore.model.dto.UserDto;
 import com.coderqian.dubbocore.model.entity.UserEntity;
 
 import java.util.List;
@@ -26,5 +27,5 @@ public interface TestService {
      * @param text 测试数据
      * @return String
      */
-    List<UserEntity> testMybatis(String text);
+    List<UserDto> testMybatis(String text);
 }
