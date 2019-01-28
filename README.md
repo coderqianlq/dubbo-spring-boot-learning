@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://i.ibb.co/250CB9Y/154358749351878.png" width="60%"/>
-	<br/>
+  <img src="./dubbo-spring-boot.jpg" width="45%"/>
+	<br/><br/>
 	
   [![Build Status](https://travis-ci.org/coderqianlq/dubbo-spring-boot-cli.svg?branch=master)](https://travis-ci.org/coderqianlq/dubbo-spring-boot-cli)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/coderqianlq/dubbo-spring-boot-cli/blob/master/LICENSE)
