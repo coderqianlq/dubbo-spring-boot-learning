@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./dubbo-spring-boot.jpg" width="50%"/>
+  <img src="./dubbo-spring-boot.jpg" width="45%"/>
 	<br/><br/>
 	
   [![Build Status](https://travis-ci.org/coderqianlq/dubbo-spring-boot-cli.svg?branch=master)](https://travis-ci.org/coderqianlq/dubbo-spring-boot-cli)
