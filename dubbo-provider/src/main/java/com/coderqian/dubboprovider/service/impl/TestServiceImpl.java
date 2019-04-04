@@ -2,6 +2,7 @@ package com.coderqian.dubboprovider.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.coderqian.dubboapi.service.TestService;
+import com.coderqian.dubbocore.common.BaseResult;
 import com.coderqian.dubbocore.model.dto.UserDto;
 import com.coderqian.dubbocore.model.entity.UserEntity;
 import com.coderqian.dubboprovider.converter.User2UserDtoMapper;
@@ -40,5 +41,10 @@ public class TestServiceImpl implements TestService {
         List<UserEntity> users = userMapper.findAll();
         List<UserDto> userDto = User2UserDtoMapper.INSTANCE.users2UserDtos(users);
         return userDto;
+    }
+
+    @Override
+    public BaseResult testException() {
+        return new BaseResult();
     }
 }
