@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: dubbo-api
+
+server:
+  port: 8020
+
+dubbo:
+  application:
+    id: dubbo-api # 当前dubbo应用id
+    name: dubbo-api # 当前dubbo应用名称
+  registry:
+    address: zookeeper://127.0.0.1:2181 # 注册中心
+    timeout: 60000
+    group: dubbo
+    check: false
+  protocol:
+    name: dubbo # 生产者暴露给消费者协议
+    port: 20880 # 生产者暴露给消费者端口
