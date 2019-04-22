@@ -20,4 +20,20 @@ public interface UserMapper {
      * @return List<UserEntity>
      */
     List<UserEntity> findAll();
+
+    /**
+     * 插入用户，返回用户id
+     *
+     * @param user 用户实体
+     * @return Long
+     */
+    Long insertUser(UserEntity user);
+
+    /**
+     * 更新用户
+     *
+     * @param user 用户实体
+     * @return Long
+     */
+    Long updateUser(UserEntity user);
 }

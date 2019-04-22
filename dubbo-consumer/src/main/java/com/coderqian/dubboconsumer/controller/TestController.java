@@ -46,4 +46,17 @@ public class TestController {
     public BaseResult testException() {
         return testService.testException();
     }
+
+    @RequestMapping(value = "/insert", method = RequestMethod.POST)
+    public BaseResult insertUser(@RequestParam(value = "name") String name,
+                                 @RequestParam(value = "birth") String birth) {
+        return testService.addUser(name, birth);
+    }
+
+    @RequestMapping(value = "/update", method = RequestMethod.POST)
+    public BaseResult updateUser(@RequestParam(value = "id") String id,
+                                 @RequestParam(value = "name") String name,
+                                 @RequestParam(value = "birth", required = false) String birth) {
+        return testService.updateUser(id, name, birth);
+    }
 }

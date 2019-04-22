@@ -3,12 +3,15 @@ package com.coderqian.dubboprovider.service.impl;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.coderqian.dubboapi.service.TestService;
 import com.coderqian.dubbocore.common.BaseResult;
+import com.coderqian.dubbocore.common.constant.Code;
 import com.coderqian.dubbocore.model.dto.UserDto;
 import com.coderqian.dubbocore.model.entity.UserEntity;
 import com.coderqian.dubboprovider.converter.User2UserDtoMapper;
+import com.coderqian.dubboprovider.dao.UserDao;
 import com.coderqian.dubboprovider.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -24,6 +27,9 @@ public class TestServiceImpl implements TestService {
 
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private UserDao userDao;
 
 
     //    @HystrixCommand(commandProperties = {
@@ -46,5 +52,17 @@ public class TestServiceImpl implements TestService {
     @Override
     public BaseResult testException() {
         return new BaseResult();
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public BaseResult addUser(String name, String birth) {
+        return new BaseResult<>(Code.SUCCESS, userDao.insertUser(name, birth));
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public BaseResult updateUser(String id, String name, String birth) {
+        return new BaseResult<>(Code.SUCCESS, userDao.updateUser(id, name, birth));
     }
 }
