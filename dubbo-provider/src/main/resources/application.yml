@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: dubbo-provider
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&verifyServerCertificate=false&useSSL=false&useOldAliasMetadataBehavior=true
+    username: root
+    password: qlq1995/
+
+server:
+  port: 9091
+
+dubbo:
+  application:
+    id: dubbo-provider # 当前dubbo应用id
+    name: dubbo-provider # 当前dubbo应用名称
+  registry:
+    address: zookeeper://127.0.0.1:2181 # 注册中心
+    timeout: 60000
+    group: dubbo
+    check: false
+  protocol:
+      name: dubbo # 生产者暴露给消费者协议
+      port: 20880 # 生产者暴露给消费者端口
+
+logging:
+  config: classpath:log4j2.xml
+
+mybatis:
+  type-aliases-package: com.coderqian.dubbocore.model.entity
+  type-handlers-package: com.coderqian.dubbocore.mapper
+  mapper-locations: classpath:mapper/*.xml
