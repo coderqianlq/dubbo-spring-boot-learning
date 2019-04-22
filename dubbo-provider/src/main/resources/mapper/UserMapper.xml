@@ -11,6 +11,33 @@
         user
     </sql>
 
+    <insert id="insertUser" parameterType="com.coderqian.dubbocore.model.entity.UserEntity">
+        <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.String">
+            select replace(uuid(), '-', '') as id from dual
+        </selectKey>
+        insert into
+        <include refid="table"/>(id, name, birth)
+        values (#{id}, #{name}, #{birth})
+    </insert>
+
+    <update id="updateUser" parameterType="com.coderqian.dubbocore.model.entity.UserEntity">
+        update
+        <include refid="table"/>
+        <trim prefix="set" suffixOverrides=",">
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="birth !=null and birth != ''">
+                birth = #{birth},
+            </if>
+        </trim>
+        <where>
+            <if test="id != null and id != ''">
+                id = #{id}
+            </if>
+        </where>
+    </update>
+
     <select id="findAll" resultType="com.coderqian.dubbocore.model.entity.UserEntity">
         select
         <include refid="select"/>

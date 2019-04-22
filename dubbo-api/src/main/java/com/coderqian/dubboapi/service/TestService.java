@@ -35,4 +35,23 @@ public interface TestService {
      * @return BaseResult
      */
     BaseResult testException();
+
+    /**
+     * 新增用户
+     *
+     * @param name  姓名
+     * @param birth 出生日期
+     * @return BaseResult
+     */
+    BaseResult addUser(String name, String birth);
+
+    /**
+     * 更新用户
+     *
+     * @param id    id
+     * @param name  姓名
+     * @param birth 出生日期
+     * @return BaseResult
+     */
+    BaseResult updateUser(String id, String name, String birth);
 }
