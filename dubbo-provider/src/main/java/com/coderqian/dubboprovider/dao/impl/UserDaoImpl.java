@@ -3,6 +3,7 @@ package com.coderqian.dubboprovider.dao.impl;
 import com.coderqian.dubbocore.model.entity.UserEntity;
 import com.coderqian.dubboprovider.dao.UserDao;
 import com.coderqian.dubboprovider.mapper.UserMapper;
+import org.springframework.cache.annotation.CachePut;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
@@ -20,21 +21,16 @@ public class UserDaoImpl implements UserDao {
     private UserMapper userMapper;
 
     @Override
-    public UserEntity insertUser(String name, String birth) {
-        UserEntity user = new UserEntity();
-        user.setName(name);
-        user.setBirth(birth);
+    @CachePut(cacheNames = "user", key = "#user.id")
+    public UserEntity insertUser(UserEntity user) {
         userMapper.insertUser(user);
         user.setId(user.getId());
         return user;
     }
 
     @Override
-    public UserEntity updateUser(String id, String name, String birth) {
-        UserEntity user = new UserEntity();
-        user.setId(id);
-        user.setName(name);
-        user.setBirth(birth);
+    @CachePut(cacheNames = "user", key = "#user.id")
+    public UserEntity updateUser(UserEntity user) {
         userMapper.updateUser(user);
         return user;
     }
