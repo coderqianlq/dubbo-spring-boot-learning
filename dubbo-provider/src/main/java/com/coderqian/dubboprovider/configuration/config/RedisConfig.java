@@ -10,12 +10,14 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.interceptor.KeyGenerator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.cache.RedisCacheConfiguration;
 import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 
 import java.lang.reflect.Method;
+import java.time.Duration;
 
 /**
  * @author qianliqing
@@ -64,8 +66,11 @@ public class RedisConfig extends CachingConfigurerSupport {
      */
     @Bean
     public CacheManager cacheManager(RedisConnectionFactory factory) {
-        RedisCacheManager rcm = RedisCacheManager.create(factory);
-        return rcm;
+        return RedisCacheManager
+                .builder(factory)
+                .cacheDefaults(RedisCacheConfiguration.defaultCacheConfig().entryTtl(Duration.ofMinutes(5)))
+                .transactionAware()
+                .build();
     }
 
     /**

@@ -1,6 +1,8 @@
 package com.coderqian.dubbocore.model.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
@@ -11,6 +13,8 @@ import java.io.Serializable;
  */
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserEntity extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = 3797543733143111985L;
