@@ -14,5 +14,5 @@ http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <!-- 关闭服务消费方所有服务的启动检查。dubbo缺省会在启动时检查依赖的服务是否可用，不可用时会抛出异常，阻止Spring初始化完成 -->
     <dubbo:consumer check="false"/>
 
-    <dubbo:reference id="testService" interface="com.coderqian.dubboapi.service.TestService" generic="true"/>
+    <dubbo:reference id="testService" interface="com.qianlq.dubboapi.service.TestService" generic="true"/>
 </beans>
