@@ -36,6 +36,6 @@ logging:
   config: classpath:log4j2.xml
 
 mybatis:
-  type-aliases-package: com.coderqian.dubbocore.model.entity
-  type-handlers-package: com.coderqian.dubbocore.mapper
+  type-aliases-package: com.qianlq.dubbocore.model.entity
+#  type-handlers-package:
   mapper-locations: classpath:mapper/*.xml
