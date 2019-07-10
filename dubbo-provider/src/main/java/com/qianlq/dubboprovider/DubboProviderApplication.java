@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @EnableDubbo
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
-@MapperScan("com.coderqian.dubboprovider.mapper")
+@MapperScan("com.qianlq.dubboprovider.mapper")
 //@ImportResource({"classpath:dubbo/dubbo-provider.xml"})
 public class DubboProviderApplication {
 

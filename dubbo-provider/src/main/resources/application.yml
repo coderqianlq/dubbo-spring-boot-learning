@@ -8,8 +8,8 @@ spring:
     minIdle: 5
     maxActive: 20
     url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&verifyServerCertificate=false&useSSL=false&useOldAliasMetadataBehavior=true
-    username: root
-    password: qlq1995/
+    username:
+    password:
   redis:
     database: 0 # redis数据库索引（默认为0）
     host:  127.0.0.1
@@ -36,6 +36,6 @@ logging:
   config: classpath:log4j2.xml
 
 mybatis:
-  type-aliases-package: com.coderqian.dubbocore.model.entity
-  type-handlers-package: com.coderqian.dubbocore.mapper
+  type-aliases-package: com.qianlq.dubbocore.model.entity
+#  type-handlers-package:
   mapper-locations: classpath:mapper/*.xml
