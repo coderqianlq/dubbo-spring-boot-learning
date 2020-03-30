@@ -1,12 +1,9 @@
-<div align="center">
-  <img src="./dubbo-spring-boot.jpg" width="45%"/>
-	<br/><br/>
+## Dubbo-Spring-Boot-Learning
 	
-  [![Build Status](https://travis-ci.org/coderqianlq/dubbo-spring-boot-cli.svg?branch=master)](https://travis-ci.org/coderqianlq/dubbo-spring-boot-cli)
-  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/coderqianlq/dubbo-spring-boot-cli/blob/master/LICENSE)
-</div>
+[![Build Status](https://travis-ci.org/coderqianlq/dubbo-spring-boot-learning.svg?branch=master)](https://travis-ci.org/coderqianlq/dubbo-spring-boot-learning)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/coderqianlq/dubbo-spring-boot-learning/blob/master/LICENSE)
 
-**快速开始**
+## 快速开始
 
 通常情况，dubbo应用有两种使用场景，其一为服务提供方，另外一个是服务消费方。
 
@@ -20,7 +17,7 @@ public interface TestService {
 }
 ```
 
-**服务提供方**
+### 服务提供方
 
 添加依赖：
 
@@ -86,7 +83,7 @@ public class TestServiceImpl implements TestService {
 
 注：`@Service`是dubbo提供的注解`com.alibaba.dubbo.config.annotation.Service`。
 
-**服务消费方**
+### 服务消费方
 
 添加依赖：
 
@@ -141,10 +138,13 @@ public class TestController {
 }
 ```
 
-**参考文档**
+## 参考教程
 
 * dubbo: http://dubbo.io
 * spring-boot: http://projects.spring.io/spring-boot
 * dubbo-spring-boot-starter: https://github.com/alibaba/dubbo-spring-boot-starter
 * dubbo-spring-boot-project: https://github.com/dubbo/dubbo-spring-boot-project
 
+## License
+
+[MIT](https://github.com/coderqianlq/dubbo-spring-boot-learning/blob/master/LICENSE) © CoderQian
