@@ -28,6 +28,12 @@
             <artifactId>dubbo-spring-boot-starter</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <!-- 引入Mybatis依赖 -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
