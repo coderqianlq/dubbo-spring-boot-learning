@@ -6,7 +6,7 @@ import com.qianlq.dubbocore.model.dto.UserDto;
 import java.util.List;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018/11/29 1:55 PM
  * email: qianlq0824@gmail.com
  */

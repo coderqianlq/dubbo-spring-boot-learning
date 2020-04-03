@@ -1,4 +1,4 @@
-package com.qianlq.dubboprovider.configuration.filter;
+package com.qianlq.dubboprovider.config.filter;
 
 import com.alibaba.druid.support.http.WebStatFilter;
 
@@ -6,7 +6,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebInitParam;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-01-18 6:37 PM
  * mail: qianlq0824@gmail.com
  * <p>

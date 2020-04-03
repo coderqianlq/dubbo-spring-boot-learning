@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-01-19 12:55 AM
  * mail: qianlq0824@gmail.com
  */
@@ -45,8 +45,7 @@ public class TestServiceImpl implements TestService {
     public List<UserDto> testMybatis(String text) {
         log.info("测试数据：{}", text);
         List<UserEntity> users = userMapper.findAll();
-        List<UserDto> userDto = User2UserDtoMapper.INSTANCE.users2UserDtos(users);
-        return userDto;
+        return User2UserDtoMapper.INSTANCE.users2UserDtos(users);
     }
 
     @Override

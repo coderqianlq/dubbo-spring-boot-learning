@@ -6,7 +6,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-04-04 9:14 AM
  * mail: qianlq0824@gmail.com
  * <p>

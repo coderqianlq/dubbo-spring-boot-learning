@@ -1,4 +1,4 @@
-package com.qianlq.dubboprovider.configuration.servlet;
+package com.qianlq.dubboprovider.config.servlet;
 
 import com.alibaba.druid.support.http.StatViewServlet;
 
@@ -6,7 +6,7 @@ import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-01-18 6:37 PM
  * mail: qianlq0824@gmail.com
  * <p>

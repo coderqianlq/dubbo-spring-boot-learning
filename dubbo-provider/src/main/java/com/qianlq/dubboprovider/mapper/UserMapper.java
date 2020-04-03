@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019/1/18 7:58 PM
  * email: qianlq0824@gmail.com
  */

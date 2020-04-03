@@ -1,4 +1,4 @@
-package com.qianlq.dubboprovider.configuration.config;
+package com.qianlq.dubboprovider.config.druid;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,13 +9,13 @@ import org.springframework.context.annotation.Primary;
 import javax.sql.DataSource;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019/1/18 6:52 PM
  * email: qianlq0824@gmail.com
  */
 
 @Configuration
-public class DruidDBConfig {
+public class DruidConfig {
 
     @Value("${spring.datasource.url}")
     private String dbUrl;

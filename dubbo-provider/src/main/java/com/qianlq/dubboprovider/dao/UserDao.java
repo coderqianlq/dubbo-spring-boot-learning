@@ -3,7 +3,7 @@ package com.qianlq.dubboprovider.dao;
 import com.qianlq.dubbocore.model.entity.UserEntity;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019/4/22 8:33 PM
  * email: qianlq0824@gmail.com
  */

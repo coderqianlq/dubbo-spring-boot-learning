@@ -10,7 +10,7 @@ import org.mapstruct.factory.Mappers;
 import java.util.List;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019/1/28 2:49 PM
  * email: qianlq0824@gmail.com
  */

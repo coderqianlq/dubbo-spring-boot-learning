@@ -1,4 +1,4 @@
-package com.qianlq.dubbocommon.util;
+package com.qianlq.common.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-06-01 下午10:51
  * mail: qianlq0824@gmail.com
  * <p>

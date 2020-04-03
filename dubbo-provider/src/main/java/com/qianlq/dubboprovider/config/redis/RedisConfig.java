@@ -1,4 +1,4 @@
-package com.qianlq.dubboprovider.configuration.config;
+package com.qianlq.dubboprovider.config.redis;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
@@ -20,7 +20,7 @@ import java.lang.reflect.Method;
 import java.time.Duration;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019/4/23 5:38 PM
  * email: qianlq0824@gmail.com
  */

@@ -1,4 +1,4 @@
-package com.qianlq.dubbocommon.util;
+package com.qianlq.common.util;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-06-01 下午10:45
  * mail: qianlq0824@gmail.com
  * <p>

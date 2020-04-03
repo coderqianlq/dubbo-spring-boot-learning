@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import javax.annotation.Resource;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019/4/22 8:34 PM
  * email: qianlq0824@gmail.com
  */

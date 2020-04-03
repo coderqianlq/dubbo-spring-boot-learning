@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019/1/18 6:59 PM
  * email: qianlq0824@gmail.com
  */

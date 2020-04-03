@@ -145,6 +145,6 @@ public class TestController {
 * dubbo-spring-boot-starter: https://github.com/alibaba/dubbo-spring-boot-starter
 * dubbo-spring-boot-project: https://github.com/dubbo/dubbo-spring-boot-project
 
-## License
+## 开源协议
 
 [MIT](https://github.com/coderqianlq/dubbo-spring-boot-learning/blob/master/LICENSE) © CoderQian

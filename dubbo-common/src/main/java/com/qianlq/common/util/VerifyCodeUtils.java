@@ -1,7 +1,7 @@
-package com.qianlq.dubbocommon.util;
+package com.qianlq.common.util;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019/1/22 11:17 AM
  * email: qianlq0824@gmail.com
  * <p>

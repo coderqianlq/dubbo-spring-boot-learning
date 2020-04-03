@@ -1,7 +1,7 @@
 package com.qianlq.dubbocore.common.constant;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2018-09-28 下午9:11
  * mail: qianlq0824@gmail.com
  * <p>

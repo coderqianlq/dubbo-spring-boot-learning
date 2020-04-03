@@ -1,7 +1,7 @@
 package com.qianlq.dubboconsumer.model.vo;
 
 /**
- * @author qianliqing
+ * @author CoderQian
  * @date 2019-01-28 5:16 PM
  * mail: qianlq0824@gmail.com
  */
